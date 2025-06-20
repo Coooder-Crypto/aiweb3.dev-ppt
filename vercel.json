@@ -2,11 +2,7 @@
   "version": 2,
   "name": "aiweb3-dev-ppt",
   "builds": [
-    { "src": "*.html", "use": "@vercel/static" },
-    { "src": "slides/*.html", "use": "@vercel/static" },
-    { "src": "css/**", "use": "@vercel/static" },
-    { "src": "js/**", "use": "@vercel/static" },
-    { "src": "public/**", "use": "@vercel/static" }
+    { "src": "**/*", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "/$1" }
